@@ -95,7 +95,7 @@ const User = mongoose.model('User', userSchema);
 
 // Made myself admin - MOVED THIS AFTER USER MODEL DEFINITION
 User.findOneAndUpdate(
-  { email: 'zia.kadijah007@gmail.com' },
+  { email: 'zia.kadijah007@gmail.com' }, //replace this with your own email id <3 
   { role: 'admin' },
   { new: true }
 ).then(user => {
