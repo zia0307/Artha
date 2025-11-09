@@ -1,0 +1,45 @@
+.footer {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 1000;
+}
+
+.about-section {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-section h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.about-section p {
+  opacity: 0.9;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* this is to make the app design mobile responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+  
+  .about-section h3 {
+    font-size: 1.1rem;
+  }
+  
+  .about-section p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,220 @@
+* {
+  font-family: 'Poiret One', cursive;
+}
+
+.auth-container {
+  min-height: calc(100vh - 140px);
+  background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+.auth-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  padding: 4rem; 
+  width: 100%;
+  max-width: 800px; 
+  color: white;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+.auth-header h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #ffffff, #89f7fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.auth-header p {
+  opacity: 0.8;
+  margin: 0;
+  font-size: 1.2rem; 
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; 
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem; 
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 1.1rem; 
+  opacity: 0.9;
+}
+
+.form-group input,
+.form-group select {
+  padding: 1.5rem;
+  border-radius: 16px; 
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 1.1rem; 
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  width: 100%;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 0 3px rgba(168, 230, 255, 0.3); 
+}
+
+.auth-submit-btn {
+  padding: 1.5rem; /* Larger button */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-size: 1.2rem; 
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem; /* More top margin */
+  width: 100%;
+}
+
+.auth-submit-btn:hover:not(:disabled) {
+  transform: translateY(-3px); 
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 3rem; /* More spacing */
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.auth-footer p {
+  opacity: 0.8;
+  margin: 0;
+  font-size: 1.1rem; /* Larger footer text */
+}
+
+@media (min-width: 1200px) {
+  .auth-card {
+    max-width: 900px; 
+  }
+  
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+    padding: 1.5rem;
+  }
+  
+  .auth-card {
+    padding: 3rem 2.5rem;
+    max-width: 100%;
+  }
+  
+  .auth-header h2 {
+    font-size: 2.3rem;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 1rem;
+  }
+  
+  .auth-card {
+    padding: 2.5rem 2rem;
+  }
+  
+  .auth-header h2 {
+    font-size: 2rem;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 1.2rem;
+  }
+}
+
+.back-btn {
+  position: absolute;
+  left: 2.5rem;
+  top: 2.5rem;
+  padding: 1rem 1.8rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(-5px);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+  .back-btn {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 1.5rem;
+    align-self: flex-start; 
+    padding: 0.9rem 1.5rem;
+  }
+  
+  .back-btn:hover {
+    transform: translateX(-3px); 
+  }
+}
+
+@media (max-width: 480px) {
+  .back-btn {
+    padding: 0.8rem 1.3rem;
+    font-size: 0.9rem;
+  }
+}
