@@ -4,11 +4,11 @@ Artha is a translator app made for our Web Technologies mini project, using MERN
 
 # Here's how to run it:
 -> Clone the repo 
--> cd artha-backend
+-> cd server
 -> npm run dev 
 
 Open another terminal, then 
--> cd artha-frontend
+-> cd client
 -> npm run dev 
 
 -> Copy-paste the local host link into your browser
