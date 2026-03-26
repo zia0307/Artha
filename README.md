@@ -31,8 +31,8 @@ Follow these steps to run the project locally:
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-link>
-cd <your-repo-name>
+git clone https://github.com/zia0307/Artha
+cd Artha
 ```
 
 ### 2. Start the Backend Server
